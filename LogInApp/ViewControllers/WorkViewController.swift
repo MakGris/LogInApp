@@ -14,15 +14,16 @@ class WorkViewController: UIViewController {
     @IBOutlet var kindOfActivityLabel: UILabel!
     
     //    MARK: Public properties
+    var user: User!
     var positionName: String!
     var companyName: String!
     var activityName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        positionLabel.text = positionName
-        companyNameLabel.text = companyName
-        kindOfActivityLabel.text = activityName
+        positionLabel.text = user.person.work.position
+        companyNameLabel.text = user.person.work.nameOfCompany
+        kindOfActivityLabel.text = user.person.work.kindOfActivity
     }
     
 }

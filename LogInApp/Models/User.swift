@@ -22,9 +22,13 @@ struct User {
                 surname: "Грищенко",
                 hobbies: Hobby(
                     buildPC: "Мой ПК",
-                               favoriteGame: "Моя любимая игра - BloodBorne",
-                               favoriteFilm: "Мой любимый фильм - Форест Гамп",
-                               favoriteBook: "Моя любимая трилогия книг - В память о прошлом Земли "
+                    imageOfPC: "PC",
+                    favoriteGame: "Моя любимая игра - BloodBorne",
+                    imageOfGame: "favoriteGame",
+                    favoriteFilm: "Мой любимый фильм - Форест Гамп",
+                    imageOfFilm: "favoriteFilm",
+                    favoriteBook: "Моя любимая трилогия книг - В память о прошлом Земли ",
+                    imageOfBook: "favoriteBook"
                 ),
                 work: Work(
                     position: "Должность: Технический директор",
@@ -46,6 +50,9 @@ struct User {
 struct Person {
     let name: String
     let surname: String
+    var fullName: String {
+        "\(name) \(surname)"
+    }
     let hobbies: Hobby
     let work: Work
     let education: Education
@@ -53,9 +60,13 @@ struct Person {
 
 struct Hobby {
     let buildPC: String
+    let imageOfPC: String
     let favoriteGame: String
+    let imageOfGame: String
     let favoriteFilm: String
+    let imageOfFilm: String
     let favoriteBook: String
+    let imageOfBook: String
 }
 
 struct Work {

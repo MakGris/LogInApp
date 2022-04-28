@@ -8,22 +8,31 @@
 import UIKit
 
 class HobbiesViewController: UIViewController {
+//MARK: IB Outlets
+    @IBOutlet var buildPCButton: UIButton!
+    @IBOutlet var videoGamesButton: UIButton!
+    @IBOutlet var booksButton: UIButton!
+    @IBOutlet var filmsButton: UIButton!
     
-//    MARK: Public properties
-    let user = User.getUser()
+//MARK: Public properties
+    var user: User!
     
-//    MARK: Navigation
+//MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let gamesVC = segue.destination as? GamesViewController {
-            gamesVC.favoriteGameName = user.person.hobbies.favoriteGame
-        } else if let booksVC = segue.destination as? BooksViewController {
-            booksVC.favoriteBookName = user.person.hobbies.favoriteBook
-        } else if let filmsVC = segue.destination as? FilmsViewController {
-            filmsVC.favoriteFilmName = user.person.hobbies.favoriteFilm
-        } else if let aboutPCVC = segue.destination as? PCBulidViewController {
-            aboutPCVC.aboutPC = user.person.hobbies.buildPC
+        guard let aboutHoobiesVC = segue.destination as? CurrentHobbieViewController else { return }
+        let senderButton = sender as! UIButton
+        if senderButton == buildPCButton {
+            aboutHoobiesVC.hobbieDescription = user.person.hobbies.buildPC
+            aboutHoobiesVC.image = UIImage(named: user.person.hobbies.imageOfPC)
+        } else if senderButton == videoGamesButton {
+            aboutHoobiesVC.hobbieDescription = user.person.hobbies.favoriteGame
+            aboutHoobiesVC.image = UIImage(named: user.person.hobbies.imageOfGame)
+        } else if senderButton == booksButton {
+            aboutHoobiesVC.hobbieDescription = user.person.hobbies.favoriteBook
+            aboutHoobiesVC.image = UIImage(named: user.person.hobbies.imageOfBook)
+        } else if senderButton == filmsButton {
+            aboutHoobiesVC.hobbieDescription = user.person.hobbies.favoriteFilm
+            aboutHoobiesVC.image = UIImage(named: user.person.hobbies.imageOfFilm)
         }
-        
     }
-    
 }

@@ -154,47 +154,6 @@
             </objects>
             <point key="canvasLocation" x="932" y="820"/>
         </scene>
-        <!--Bulid View Controller-->
-        <scene sceneID="1A1-Ho-2cL">
-            <objects>
-                <viewController id="SOL-BX-r09" customClass="PCBulidViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tle-yU-59y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PC" translatesAutoresizingMaskIntoConstraints="NO" id="NFa-ii-uYt">
-                                <rect key="frame" x="40" y="44" width="240" height="392"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzg-we-P1g">
-                                <rect key="frame" x="139.5" y="380.5" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ncO-L4-hfR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="NFa-ii-uYt" firstAttribute="leading" secondItem="ncO-L4-hfR" secondAttribute="leading" constant="40" id="91x-XT-GOo"/>
-                            <constraint firstItem="NFa-ii-uYt" firstAttribute="centerX" secondItem="Tle-yU-59y" secondAttribute="centerX" id="D82-iG-eC3"/>
-                            <constraint firstItem="ncO-L4-hfR" firstAttribute="trailing" secondItem="NFa-ii-uYt" secondAttribute="trailing" constant="40" id="HAh-NJ-vH8"/>
-                            <constraint firstItem="ncO-L4-hfR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gzg-we-P1g" secondAttribute="trailing" id="Rhu-yV-JAG"/>
-                            <constraint firstItem="Gzg-we-P1g" firstAttribute="centerX" secondItem="Tle-yU-59y" secondAttribute="centerX" id="Uff-0w-juT"/>
-                            <constraint firstItem="Gzg-we-P1g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ncO-L4-hfR" secondAttribute="leading" id="XSF-cP-7qH"/>
-                            <constraint firstItem="NFa-ii-uYt" firstAttribute="centerY" secondItem="Tle-yU-59y" secondAttribute="centerY" id="aIn-Nd-3CL"/>
-                            <constraint firstItem="ncO-L4-hfR" firstAttribute="bottom" secondItem="Gzg-we-P1g" secondAttribute="bottom" constant="30" id="k38-6X-yAB"/>
-                            <constraint firstItem="NFa-ii-uYt" firstAttribute="top" secondItem="ncO-L4-hfR" secondAttribute="top" id="meG-5A-jGU"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="gCD-lQ-j2s"/>
-                    <connections>
-                        <outlet property="aboutPCLabel" destination="Gzg-we-P1g" id="Uhc-B4-Km8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MRh-8F-f89" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1324" y="2513"/>
-        </scene>
         <!--Хобби-->
         <scene sceneID="1Ne-0k-Tcf">
             <objects>
@@ -211,7 +170,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Сборка ПК"/>
                                         <connections>
-                                            <segue destination="SOL-BX-r09" kind="show" id="CNb-lw-C58"/>
+                                            <segue destination="cVe-Yg-AKx" kind="show" id="45q-wU-z91"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-vk-Nhy">
@@ -219,7 +178,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Видеоигры"/>
                                         <connections>
-                                            <segue destination="NTT-H1-p8z" kind="show" id="eOM-FQ-l9h"/>
+                                            <segue destination="cVe-Yg-AKx" kind="show" id="M6o-YH-lQc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gu-Xv-4jE">
@@ -227,7 +186,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Чтение книг"/>
                                         <connections>
-                                            <segue destination="K4G-bD-Dp8" kind="show" id="ElU-bD-ngt"/>
+                                            <segue destination="cVe-Yg-AKx" kind="show" id="MjB-Ni-fqG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKi-rf-YxF">
@@ -235,7 +194,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Просмотр фильмов"/>
                                         <connections>
-                                            <segue destination="cVe-Yg-AKx" kind="show" id="QOp-bg-yt5"/>
+                                            <segue destination="cVe-Yg-AKx" kind="show" id="j7t-eo-75R"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -249,56 +208,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Хобби" id="2V1-k8-L3X"/>
+                    <connections>
+                        <outlet property="booksButton" destination="7gu-Xv-4jE" id="PDk-hU-Me2"/>
+                        <outlet property="buildPCButton" destination="70x-C4-CBg" id="dx6-Cg-ed1"/>
+                        <outlet property="filmsButton" destination="iKi-rf-YxF" id="DdN-7G-zwY"/>
+                        <outlet property="videoGamesButton" destination="qxL-vk-Nhy" id="802-rh-2TI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8D-Db-hpk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.25" y="1554.9295774647887"/>
         </scene>
-        <!--Games View Controller-->
-        <scene sceneID="iDJ-lp-Znb">
-            <objects>
-                <viewController id="NTT-H1-p8z" customClass="GamesViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PSE-C2-X4m">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favoriteGame" translatesAutoresizingMaskIntoConstraints="NO" id="1ER-Hx-QHp">
-                                <rect key="frame" x="40" y="44" width="240" height="392"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-Bl-NNV">
-                                <rect key="frame" x="139.5" y="380.5" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="AaK-AU-jRs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="1ER-Hx-QHp" firstAttribute="top" secondItem="AaK-AU-jRs" secondAttribute="top" id="4FB-Lw-Xxm"/>
-                            <constraint firstItem="AaK-AU-jRs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ha2-Bl-NNV" secondAttribute="trailing" id="4wa-Qz-0bE"/>
-                            <constraint firstItem="1ER-Hx-QHp" firstAttribute="centerX" secondItem="PSE-C2-X4m" secondAttribute="centerX" id="8Gp-Qm-32z"/>
-                            <constraint firstItem="ha2-Bl-NNV" firstAttribute="centerX" secondItem="PSE-C2-X4m" secondAttribute="centerX" id="9Yu-PE-aad"/>
-                            <constraint firstItem="1ER-Hx-QHp" firstAttribute="centerY" secondItem="PSE-C2-X4m" secondAttribute="centerY" id="Fgr-Gt-W4F"/>
-                            <constraint firstItem="1ER-Hx-QHp" firstAttribute="leading" secondItem="AaK-AU-jRs" secondAttribute="leading" constant="40" id="Ibv-zg-hdx"/>
-                            <constraint firstItem="AaK-AU-jRs" firstAttribute="bottom" secondItem="ha2-Bl-NNV" secondAttribute="bottom" constant="30" id="Wgj-lh-vzO"/>
-                            <constraint firstItem="ha2-Bl-NNV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AaK-AU-jRs" secondAttribute="leading" id="esg-yr-vub"/>
-                            <constraint firstItem="AaK-AU-jRs" firstAttribute="trailing" secondItem="1ER-Hx-QHp" secondAttribute="trailing" constant="40" id="h2F-tl-VZL"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="CP0-vh-jaO"/>
-                    <connections>
-                        <outlet property="favoriteGameLabel" destination="ha2-Bl-NNV" id="A7c-BO-NIx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ie1-gD-xwr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-368" y="2512"/>
-        </scene>
-        <!--Films View Controller-->
+        <!--Current Hobbie View Controller-->
         <scene sceneID="QW5-T6-3FP">
             <objects>
-                <viewController id="cVe-Yg-AKx" customClass="FilmsViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cVe-Yg-AKx" customClass="CurrentHobbieViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XwD-iL-s1M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,12 +253,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="ev0-ZG-IFe"/>
                     <connections>
-                        <outlet property="favoriteFilmLabel" destination="F7P-CU-cVD" id="wIe-wn-drt"/>
+                        <outlet property="imageView" destination="73s-yN-m8v" id="Dup-ck-6xj"/>
+                        <outlet property="textLabel" destination="F7P-CU-cVD" id="BKb-Lh-nbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P10-rC-1ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1605" y="2512"/>
+            <point key="canvasLocation" x="131" y="2471"/>
         </scene>
         <!--Образование-->
         <scene sceneID="9iq-vW-Boh">
@@ -490,47 +415,6 @@
             </objects>
             <point key="canvasLocation" x="1309" y="-130"/>
         </scene>
-        <!--Books View Controller-->
-        <scene sceneID="VLR-sq-FRU">
-            <objects>
-                <viewController id="K4G-bD-Dp8" customClass="BooksViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hsa-Iq-YbG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favoriteBook" translatesAutoresizingMaskIntoConstraints="NO" id="KOK-fU-k5A">
-                                <rect key="frame" x="40" y="44" width="240" height="392"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTX-mD-iCe">
-                                <rect key="frame" x="139.5" y="380.5" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="4pP-en-ccz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="4pP-en-ccz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lTX-mD-iCe" secondAttribute="trailing" id="3Bp-bE-Bks"/>
-                            <constraint firstItem="4pP-en-ccz" firstAttribute="bottom" secondItem="lTX-mD-iCe" secondAttribute="bottom" constant="30" id="4Ld-es-xDy"/>
-                            <constraint firstItem="KOK-fU-k5A" firstAttribute="centerY" secondItem="hsa-Iq-YbG" secondAttribute="centerY" id="5ga-qf-cia"/>
-                            <constraint firstItem="KOK-fU-k5A" firstAttribute="top" secondItem="4pP-en-ccz" secondAttribute="top" id="7CK-2X-dQE"/>
-                            <constraint firstItem="lTX-mD-iCe" firstAttribute="centerX" secondItem="hsa-Iq-YbG" secondAttribute="centerX" id="IXe-2y-LgU"/>
-                            <constraint firstItem="KOK-fU-k5A" firstAttribute="leading" secondItem="4pP-en-ccz" secondAttribute="leading" constant="40" id="SR7-Bh-EAO"/>
-                            <constraint firstItem="4pP-en-ccz" firstAttribute="trailing" secondItem="KOK-fU-k5A" secondAttribute="trailing" constant="40" id="WEJ-hi-mGG"/>
-                            <constraint firstItem="KOK-fU-k5A" firstAttribute="centerX" secondItem="hsa-Iq-YbG" secondAttribute="centerX" id="mba-Po-bTO"/>
-                            <constraint firstItem="lTX-mD-iCe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4pP-en-ccz" secondAttribute="leading" id="xHs-eq-PQd"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="tIl-V2-UzJ"/>
-                    <connections>
-                        <outlet property="favoriteBookLabel" destination="lTX-mD-iCe" id="Cfo-Tx-chJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ned-Ic-HbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="628" y="2512"/>
-        </scene>
         <!--Хобби-->
         <scene sceneID="XNc-BF-n39">
             <objects>
@@ -538,7 +422,7 @@
                     <tabBarItem key="tabBarItem" title="Хобби" image="gamecontroller.fill" catalog="system" selectedImage="gamecontroller.fill" id="xvw-sE-D5q"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6vg-3c-mVX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -557,7 +441,7 @@
                     <tabBarItem key="tabBarItem" title="Образование" image="graduationcap.fill" catalog="system" id="NtQ-IJ-6w0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b1a-9h-k2c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -589,13 +473,13 @@
             <point key="canvasLocation" x="2803" y="820"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="M6o-YH-lQc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Monte Carlo" width="2560" height="1440"/>
-        <image name="PC" width="3003" height="3246"/>
         <image name="case.fill" catalog="system" width="128" height="100"/>
-        <image name="favoriteBook" width="800" height="500"/>
         <image name="favoriteFilm" width="352" height="465"/>
-        <image name="favoriteGame" width="1024" height="1024"/>
         <image name="gamecontroller.fill" catalog="system" width="128" height="80"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="graduationcap.fill" catalog="system" width="128" height="108"/>

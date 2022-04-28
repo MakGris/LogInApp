@@ -13,10 +13,10 @@ class LogInCompleteViewController: UIViewController {
     @IBOutlet var welcomeUserLabel: UILabel!
     
 //    MARK: Public properties
-    var userName: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeUserLabel.text = "Welcome, \(userName ?? "")!"
+        welcomeUserLabel.text = "Welcome, \(user.person.fullName)!"
     }
 }

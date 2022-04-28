@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51D5965281A470500E7E97B /* CurrentHobbieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D5964281A470500E7E97B /* CurrentHobbieViewController.swift */; };
 		D57EE4A82814EECC001C70A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EE4A72814EECC001C70A2 /* User.swift */; };
 		D57EE4AA2815453B001C70A2 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EE4A92815453B001C70A2 /* EducationViewController.swift */; };
 		D57EE4AC2815457D001C70A2 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EE4AB2815457D001C70A2 /* WorkViewController.swift */; };
-		D57EE4AE281545D5001C70A2 /* PCBulidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EE4AD281545D5001C70A2 /* PCBulidViewController.swift */; };
-		D57EE4B028154607001C70A2 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EE4AF28154607001C70A2 /* GamesViewController.swift */; };
-		D57EE4B228154640001C70A2 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EE4B128154640001C70A2 /* BooksViewController.swift */; };
-		D57EE4B428154661001C70A2 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EE4B328154661001C70A2 /* FilmsViewController.swift */; };
 		D5B4874E28101BAF00D9556B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4874D28101BAF00D9556B /* AppDelegate.swift */; };
 		D5B4875028101BAF00D9556B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4874F28101BAF00D9556B /* SceneDelegate.swift */; };
 		D5B4875228101BAF00D9556B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4875128101BAF00D9556B /* LogInViewController.swift */; };
@@ -25,13 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D51D5964281A470500E7E97B /* CurrentHobbieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentHobbieViewController.swift; sourceTree = "<group>"; };
 		D57EE4A72814EECC001C70A2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D57EE4A92815453B001C70A2 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		D57EE4AB2815457D001C70A2 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
-		D57EE4AD281545D5001C70A2 /* PCBulidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCBulidViewController.swift; sourceTree = "<group>"; };
-		D57EE4AF28154607001C70A2 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
-		D57EE4B128154640001C70A2 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
-		D57EE4B328154661001C70A2 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 		D5B4874A28101BAF00D9556B /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B4874D28101BAF00D9556B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B4874F28101BAF00D9556B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,11 +56,8 @@
 				D5B4876128102A7100D9556B /* LogInCompleteViewController.swift */,
 				D57EE4A92815453B001C70A2 /* EducationViewController.swift */,
 				D57EE4AB2815457D001C70A2 /* WorkViewController.swift */,
-				D57EE4AD281545D5001C70A2 /* PCBulidViewController.swift */,
-				D57EE4AF28154607001C70A2 /* GamesViewController.swift */,
-				D57EE4B128154640001C70A2 /* BooksViewController.swift */,
-				D57EE4B328154661001C70A2 /* FilmsViewController.swift */,
 				D5C2DA582816C0A300E07623 /* HobbiesViewController.swift */,
+				D51D5964281A470500E7E97B /* CurrentHobbieViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,17 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57EE4AE281545D5001C70A2 /* PCBulidViewController.swift in Sources */,
 				D5B4875228101BAF00D9556B /* LogInViewController.swift in Sources */,
 				D57EE4AA2815453B001C70A2 /* EducationViewController.swift in Sources */,
-				D57EE4B428154661001C70A2 /* FilmsViewController.swift in Sources */,
 				D5B4874E28101BAF00D9556B /* AppDelegate.swift in Sources */,
-				D57EE4B028154607001C70A2 /* GamesViewController.swift in Sources */,
-				D57EE4B228154640001C70A2 /* BooksViewController.swift in Sources */,
 				D5B4875028101BAF00D9556B /* SceneDelegate.swift in Sources */,
 				D57EE4A82814EECC001C70A2 /* User.swift in Sources */,
 				D5C2DA592816C0A300E07623 /* HobbiesViewController.swift in Sources */,
 				D57EE4AC2815457D001C70A2 /* WorkViewController.swift in Sources */,
+				D51D5965281A470500E7E97B /* CurrentHobbieViewController.swift in Sources */,
 				D5B4876228102A7100D9556B /* LogInCompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

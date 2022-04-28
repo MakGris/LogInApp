@@ -17,19 +17,15 @@ class EducationViewController: UIViewController {
     @IBOutlet var yearOfGraduationLabel: UILabel!
     
 //    MARK: Public properties
-    var university: String!
-    var specialization: String!
-    var qualification: String!
-    var yearOfAdmission: Int!
-    var yearOfGraduated: Int!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        universityLabel.text = university
-        specializationLabel.text = specialization
-        qualificationLabel.text = qualification
-        yearOfAdmissionLabel.text = "Год поступления: \(yearOfAdmission ?? 0)"
-        yearOfGraduationLabel.text = "Год выпуска: \(yearOfGraduated ?? 0)"
+        universityLabel.text = user.person.education.nameOfUniversity
+        specializationLabel.text = user.person.education.nameOfSpecialization
+        qualificationLabel.text = user.person.education.nameOfQualification
+        yearOfAdmissionLabel.text = "Год поступления: \(user.person.education.yearOfAdmission)"
+        yearOfGraduationLabel.text = "Год выпуска: \(user.person.education.yearOfGraduation)"
         
     }
 

@@ -28,18 +28,14 @@ class LogInViewController: UIViewController {
         guard let viewControllers = tabBarController.viewControllers else { return }
         for viewController in viewControllers {
             if let logCompleteVC = viewController as? LogInCompleteViewController {
-                logCompleteVC.userName = "\(user.person.name) \(user.person.surname)"
+                logCompleteVC.user = user
             } else if let navigationVC = viewController as? UINavigationController {
                 if let aboutWorkVC = navigationVC.topViewController as? WorkViewController {
-                    aboutWorkVC.positionName = user.person.work.position
-                    aboutWorkVC.activityName = user.person.work.kindOfActivity
-                    aboutWorkVC.companyName = user.person.work.nameOfCompany
+                    aboutWorkVC.user = user
                 } else if let aboutEducationVC = navigationVC.topViewController as? EducationViewController {
-                    aboutEducationVC.university = user.person.education.nameOfUniversity
-                    aboutEducationVC.specialization = user.person.education.nameOfSpecialization
-                    aboutEducationVC.qualification = user.person.education.nameOfQualification
-                    aboutEducationVC.yearOfAdmission = user.person.education.yearOfAdmission
-                    aboutEducationVC.yearOfGraduated = user.person.education.yearOfGraduation
+                    aboutEducationVC.user = user
+                } else if let aboutHobbiesVC = navigationVC.topViewController as? HobbiesViewController {
+                    aboutHobbiesVC.user = user
                 }
             }
         }
